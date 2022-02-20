@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">5180_MAD</string>
+    <string name="ticket_price">Ticket Price: </string>
+    <string name="enter_ticket_price">Enter Ticker Price</string>
+    <string name="discount_text">Discount: </string>
+    <string name="five_percent">5%</string>
+    <string name="ten_percent">10%</string>
+    <string name="fifteen_percent">15%</string>
+    <string name="twenty_percent">20%</string>
+    <string name="fifty_percent">50%</string>
+    <string name="discounted_price_text">Discounted Price:</string>
+    <string name="zero_dollars">$0.00</string>
+    <string name="calculate_button_text">Calculate</string>
+    <string name="clear_button_text">Clear</string>
+    <string name="user_add_number">Please enter a ticket price.</string>
+    <string name="user_add_number_greater_than_zero">Please enter a number greater than zero.</string>
+    <string name="user_choose_radio_button">Please choose a discount percent.</string>
 </resources>
