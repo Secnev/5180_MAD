@@ -2,7 +2,6 @@ package com.example.a5180_mad;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -23,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setTitle("Course Apps");
 
-        //Add assignemtns to assignments ArrayList
-        assignments.add(new Assignment("Week One: Fundamentals", "First assignment we do simple fundamentals"));//0
+        //Add assignments to assignments ArrayList
+        assignments.add(new Assignment("In Class Assignment 2: Ticket Price Discount ", "This app takes in a ticket price, lets the user choose a discounted percentage and then calculates the discounted price."));//0
 
         listView = findViewById(R.id.listViewMain);
         adapter = new CustomAdapter(this, 0, assignments);
@@ -34,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (i){
-                    case 0: Intent intent = new Intent(MainActivity.this, WeekOneActivity.class);
+                    case 0: Intent intent = new Intent(MainActivity.this, TicketPriceMainActivity.class);
                         startActivity(intent);
                         break;
                 }
