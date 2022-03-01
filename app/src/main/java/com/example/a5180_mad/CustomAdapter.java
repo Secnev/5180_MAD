@@ -10,11 +10,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class CustomAdapter extends ArrayAdapter<Assignment> {
 
-    public CustomAdapter(@NonNull Context context, int resource, @NonNull List<Assignment> objects) {
+    public CustomAdapter(@NonNull Context context, int resource, @NonNull ArrayList<Assignment> objects) {
         super(context, resource, objects);
     }
 

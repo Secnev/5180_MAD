@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Add assignments to assignments ArrayList
         assignments.add(new Assignment("In Class Assignment 2: Ticket Price Discount ", "This app takes in a ticket price, lets the user choose a discount percentage and then calculates the discounted price."));//0
+        assignments.add(new Assignment("HW 02: Task Manager", "This app lets you add, view and delete tasks")); //1
 
         listView = findViewById(R.id.listViewMain);
         adapter = new CustomAdapter(this, 0, assignments);
@@ -39,8 +40,12 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent;
                 switch (i){
-                    case 0: Intent intent = new Intent(MainActivity.this, TicketPriceMainActivity.class);
+                    case 0: intent = new Intent(MainActivity.this, TicketPriceMainActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 1: intent = new Intent(MainActivity.this, Hw02MainActivity.class);
                         startActivity(intent);
                         break;
                 }
